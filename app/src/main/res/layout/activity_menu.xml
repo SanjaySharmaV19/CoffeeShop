@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu">
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Menu"
+            android:textSize="35dp"
+            android:textAlignment="center"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:src="@drawable/samosa" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  >
+                  <Button
+                      android:id="@+id/Bs-"
+                      android:layout_width="60dp"
+                      android:layout_height="60dp"
+                      android:text="-"
+                      android:textAlignment="center"
+                      android:onClick="downsomosa"
+                      android:textSize="45dp" />
+
+                  <TextView
+                      android:id="@+id/samosa"
+                      android:layout_width="60dp"
+                      android:layout_height="70dp"
+                      android:text="0"
+                      android:textAlignment="center"
+                      android:textSize="45dp" />
+
+                  <Button
+                      android:id="@+id/Bs"
+                      android:layout_width="60dp"
+                      android:layout_height="60dp"
+                      android:text="+"
+                      android:textAlignment="center"
+                      android:textSize="43dp"
+                      android:onClick="upsamosa"/>
+              </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rs 15/-"
+                    android:textSize="30sp"
+                    android:textAlignment="center"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/cake" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <Button
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:text="-"
+                        android:textAlignment="center"
+                        android:onClick="downcake"
+                        android:textSize="45dp" />
+
+                    <TextView
+                        android:id="@+id/cake"
+                        android:layout_width="60dp"
+                        android:layout_height="70dp"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textSize="45dp" />
+
+                    <Button
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:text="+"
+                        android:textAlignment="center"
+                        android:textSize="43dp" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rs 45/-"
+                    android:textSize="30sp"
+                    android:onClick="upcake"
+                    android:textAlignment="center"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:src="@drawable/cke" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <Button
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:text="-"
+                        android:textAlignment="center"
+                        android:onClick="downcoke"
+                        android:textSize="45dp" />
+
+                    <TextView
+                        android:id="@+id/coke"
+                        android:layout_width="60dp"
+                        android:layout_height="70dp"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textSize="45dp" />
+
+                    <Button
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:text="+"
+                        android:textAlignment="center"
+                        android:textSize="43dp" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rs 40/-"
+                    android:textSize="30sp"
+                    android:onClick="upcoke"
+                    android:textAlignment="center"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="45dp"
+            android:text="Sum"/>
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Total"
+            android:layout_weight="1"
+            android:textSize="45dp"
+            android:onClick="total"
+            />
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>
